@@ -35,10 +35,6 @@ class User
         {
             return password;
         }
-        string getLogininfo()
-        {
-            return username + password;
-        }
 };
 
 void createAccount(vector<User> &accounts, User &user1, User &user2, User &user3);
@@ -153,8 +149,6 @@ bool login(vector<User> &accounts, User &user1, User &user2, User &user3, int &l
 
     cout << "Password: ";
     getline(cin >> ws, login_password);
-
-    string login = login_username + login_password;
 
     if(size(accounts) == 0){
 
